@@ -2,7 +2,7 @@
 
 This is a demo of Heiswayi Nrird's Barebone Jekyll theme. The simplest Jekyll theme I ever made. This theme has no SASS. No SCSS file needed for this theme. However, this theme has few CSS code inline directly into the `<head>...</head>`. The purpose of these CSS code is just to create a basic structure of the blog layout.
 
-### [Demo](#)
+### [Preview](https://heiswayi.github.io/hn-barebone/)
 
 ## Usage
 
