@@ -1,0 +1,26 @@
+{% if include.caption %}
+<figure>
+    {% if include.href %}
+    <a href="{{ include.href }}">
+        <img src="{{ include.src }}" alt="Image with caption: {{ include.caption }}">
+    </a>
+    {% else %}
+    <a href="{{ include.src }}">
+        <img src="{{ include.src }}" alt="Image with caption: {{ include.caption }}">
+    </a>
+    {% endif %}
+    <figcaption><span>{{ include.caption | strip }}</span></figcaption>
+</figure>
+{% else %}
+<figure>
+    {% if include.href %}
+    <a href="{{ include.href }}">
+        <img src="{{ include.src }}" alt="Image without caption">
+    </a>
+    {% else %}
+    <a href="{{ include.src }}">
+        <img src="{{ include.src }}" alt="Image without caption">
+    </a>
+    {% endif %}
+</figure>
+{% endif %}

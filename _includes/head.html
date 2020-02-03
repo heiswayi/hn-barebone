@@ -1,0 +1,80 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% seo %}
+
+<link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}">
+
+{% if jekyll.environment == 'production' and site.google_analytics %}
+  {% include google-analytics.html %}
+{% endif %}
+
+{% if site.google_fonts != nil %}
+  <link href="https://fonts.googleapis.com/css?family={{ site.google_fonts }}" rel="stylesheet">
+{% endif %}
+
+<style>
+  html,
+  body {
+    font-family: serif;
+    line-height: normal;
+    color: #333;
+  }
+  header h3 {
+    margin-bottom: 0;
+  }
+  header p {
+    margin-top: 0;
+  }
+  a.show-on-focus {
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;
+  }
+  a.show-on-focus:focus, a.show-on-focus:active {
+    text-decoration: none;
+    color: #000;
+    background-color:#FFBA00;
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow:auto;
+    margin: 10px 35%;
+    padding:5px;
+    text-align:center;
+    font-size:1.2em;
+    z-index:999;
+  }
+  .content-title {
+    margin-bottom: 0;
+  }
+  .content-meta {
+    margin-top: 0;
+    opacity: 0.5;
+  }
+  pre {
+    margin-left: 2rem;
+    color: #008000;
+    font-family: monospace;
+  }
+  img {
+    width: fit-content;
+    max-width: 100%;
+    height: auto;
+  }
+  .content-body hr {
+    opacity: 0.3;
+  }
+  .content-body .button {
+    margin-right: 1rem;
+  }
+  .divider {
+    margin-top: 1rem;
+  }
+</style>

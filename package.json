@@ -1,0 +1,10 @@
+{
+  "name": "hn-barebone",
+  "version": "0.0.1",
+  "description": "Heiswayi Nrird's Barebone Jekyll",
+  "main": "index.js",
+  "repository": "https://github.com/heiswayi/hn-barebone",
+  "author": "Heiswayi Nrird <heiswayi@nrird.com>",
+  "license": "MIT",
+  "devDependencies": {}
+}

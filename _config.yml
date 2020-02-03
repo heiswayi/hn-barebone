@@ -1,0 +1,54 @@
+title                   : "Barebone Jekyll"
+author                  : "YourName"
+email                   : your_email@example.com
+description             : "Heiswayi Nrird's Barebone Jekyll theme"
+twitter_username        : your_twitter_username
+github_username         : hn-barebone
+
+google_fonts            :
+
+# Build settings
+source                  : ./
+destination             : ./_site
+permalink               : /:title
+markdown                : kramdown
+highlighter             : rouge
+timezone                : Asia/Kuala_Lumpur
+
+include:
+  - _redirects
+
+exclude:
+  - README.md
+  - LICENSE.md
+  - CHANGELOG.md
+  - TODO.md
+  - "DRAFT-*.html"
+  - gulpfile.js
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Gemfile
+  - Gemfile.lock
+  - "*.gemspec"
+  - "*.psd"
+  - logo.png
+
+compress_html:
+  clippings             : all
+  comments              : ["<!-- ", " -->"]
+  endings               : all
+  ignore:
+    envs                : [local]
+  blanklines            : false
+  profile               : false
+  startings             : [html, head, body]
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-autoprefixer
+
+autoprefixer:
+  browsers:
+  - last 3 version

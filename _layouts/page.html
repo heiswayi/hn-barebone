@@ -1,0 +1,33 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  {% include head.html %}
+  </head>
+
+  <body>
+    <a class="show-on-focus" href="#main">Skip to content</a>
+
+    <div id="main" role="main">
+      <div class="back"><a href="{{ '/' | prepend: site.baseurl | prepend: site.url }}">index/</a></div>
+      <article class="content" itemscope itemtype="http://schema.org/BlogPosting">
+
+        <h1 class="content-title" itemprop="name headline">{{ page.title | escape }}</h1>
+
+        <hr class="divider"/>
+      
+        <div itemprop="articleBody" class="content-body">
+          {{ content }}
+        </div>
+      
+      </article>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+</html>
