@@ -77,7 +77,7 @@ layout: compress
         <div class="post-index">
             <div class="post-meta">
                 <span class="post-title">
-                    <a href="{{ post.url }}">
+                    <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
                         {{ post.title | strip }}
                     </a>
                 </span>
