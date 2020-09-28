@@ -7,3 +7,4 @@ group :jekyll_plugins do
 end
 gem 'tzinfo'
 gem 'tzinfo-data'
+gem 'kramdown-parser-gfm'
